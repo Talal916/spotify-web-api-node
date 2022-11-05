@@ -841,7 +841,7 @@ SpotifyWebApi.prototype = {
       .withPath('/authorize')
       .withQueryParameters({
         client_id: this.getClientId(),
-        response_type: 'code',
+        response_type: 'token',
         redirect_uri: this.getRedirectURI(),
         scope: scopes.join('%20'),
         state: state,
